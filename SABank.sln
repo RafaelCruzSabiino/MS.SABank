@@ -5,6 +5,14 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SABank.Api", "src\adapters\inbound\SABank.Api\SABank.Api.csproj", "{F8ADD555-7125-442C-8E78-DB14C0F6C763}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SABank.Infra", "src\adapters\outbound\SABank.Infra\SABank.Infra.csproj", "{1448EF3D-13C4-45D0-BDCE-BD01FDF26594}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SABank.Application", "src\core\SABank.Application\SABank.Application.csproj", "{09BD12AC-B6D6-4BCE-9579-927ABFB0F7E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SABank.Domain", "src\core\SABank.Domain\SABank.Domain.csproj", "{9929A598-EAB6-427C-BCED-9D1AFBB951DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SABank.Interfaces", "src\ports\SABank.Interfaces\SABank.Interfaces.csproj", "{F36503EB-C9EC-4DFC-848B-5996664F7F1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{F8ADD555-7125-442C-8E78-DB14C0F6C763}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8ADD555-7125-442C-8E78-DB14C0F6C763}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8ADD555-7125-442C-8E78-DB14C0F6C763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1448EF3D-13C4-45D0-BDCE-BD01FDF26594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1448EF3D-13C4-45D0-BDCE-BD01FDF26594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1448EF3D-13C4-45D0-BDCE-BD01FDF26594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1448EF3D-13C4-45D0-BDCE-BD01FDF26594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09BD12AC-B6D6-4BCE-9579-927ABFB0F7E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09BD12AC-B6D6-4BCE-9579-927ABFB0F7E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09BD12AC-B6D6-4BCE-9579-927ABFB0F7E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09BD12AC-B6D6-4BCE-9579-927ABFB0F7E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9929A598-EAB6-427C-BCED-9D1AFBB951DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9929A598-EAB6-427C-BCED-9D1AFBB951DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9929A598-EAB6-427C-BCED-9D1AFBB951DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9929A598-EAB6-427C-BCED-9D1AFBB951DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F36503EB-C9EC-4DFC-848B-5996664F7F1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F36503EB-C9EC-4DFC-848B-5996664F7F1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F36503EB-C9EC-4DFC-848B-5996664F7F1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F36503EB-C9EC-4DFC-848B-5996664F7F1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
