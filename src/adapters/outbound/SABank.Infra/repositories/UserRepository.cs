@@ -14,6 +14,6 @@ namespace SABank.Infra.repositories
         }
 
         public UserEntity? GetByLogin(int idLogin)
-            => _userContext.tb_sab_0002.FirstOrDefault(e => e.id_login == idLogin);
+            => _userContext.tb_sab_0002.FirstOrDefault(e => e.IdLogin == idLogin);
     }
 }
