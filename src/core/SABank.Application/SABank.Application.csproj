@@ -10,4 +10,8 @@
     <Folder Include="services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\ports\SABank.Interfaces\SABank.Interfaces.csproj" />
+  </ItemGroup>
+
 </Project>

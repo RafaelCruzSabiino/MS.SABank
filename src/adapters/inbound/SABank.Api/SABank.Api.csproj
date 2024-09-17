@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\..\..\core\SABank.Application\SABank.Application.csproj" />
+    <ProjectReference Include="..\..\outbound\SABank.Infra\SABank.Infra.csproj" />
   </ItemGroup>
 
 </Project>
