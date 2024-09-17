@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="inbound\" />
-    <Folder Include="outbound\" />
+    <ProjectReference Include="..\..\core\SABank.Domain\SABank.Domain.csproj" />
   </ItemGroup>
 
 </Project>
