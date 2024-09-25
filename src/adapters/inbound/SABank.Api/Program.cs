@@ -1,10 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using SABank.Application.services;
+using SABank.Application.Services;
 using SABank.Infra.Context;
 using SABank.Infra.repositories;
-using SABank.Interfaces.inbound;
-using SABank.Interfaces.outbound;
+using SABank.Interfaces.Inbound;
+using SABank.Interfaces.Outbound;
 
 var builder = WebApplication.CreateBuilder(args);
 

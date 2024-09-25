@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using SABank.Domain.dtos;
-using SABank.Interfaces.inbound;
-using SABank.Interfaces.outbound;
+using SABank.Domain.Dtos;
+using SABank.Interfaces.Inbound;
+using SABank.Interfaces.Outbound;
 
-namespace SABank.Application.services
+namespace SABank.Application.Services
 {
     public class UserService : IUserService
     {

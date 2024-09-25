@@ -1,6 +1,6 @@
-﻿using SABank.Domain.dtos;
+﻿using SABank.Domain.Dtos;
 
-namespace SABank.Interfaces.inbound
+namespace SABank.Interfaces.Inbound
 {
     public interface IUserService
     {

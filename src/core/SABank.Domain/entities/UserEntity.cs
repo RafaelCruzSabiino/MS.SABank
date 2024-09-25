@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SABank.Domain.entities
+namespace SABank.Domain.Entities
 {
     public class UserEntity
     {

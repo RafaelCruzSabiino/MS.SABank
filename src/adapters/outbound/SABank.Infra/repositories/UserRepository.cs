@@ -1,6 +1,6 @@
-﻿using SABank.Domain.entities;
+﻿using SABank.Domain.Entities;
 using SABank.Infra.Context;
-using SABank.Interfaces.outbound;
+using SABank.Interfaces.Outbound;
 
 namespace SABank.Infra.repositories
 {

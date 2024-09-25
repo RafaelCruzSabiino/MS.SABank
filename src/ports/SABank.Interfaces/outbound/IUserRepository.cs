@@ -1,6 +1,6 @@
-﻿using SABank.Domain.entities;
+﻿using SABank.Domain.Entities;
 
-namespace SABank.Interfaces.outbound
+namespace SABank.Interfaces.Outbound
 {
     public interface IUserRepository
     {

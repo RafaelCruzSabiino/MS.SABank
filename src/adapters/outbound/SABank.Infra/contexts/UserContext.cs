@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SABank.Domain.entities;
+using SABank.Domain.Entities;
 
 namespace SABank.Infra.Context
 {

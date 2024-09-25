@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SABank.Interfaces.inbound;
+using SABank.Interfaces.Inbound;
 
-namespace SABank.Api.controllers
+namespace SABank.Api.Controllers
 {
     [ApiController]
     [Route("/users")]
