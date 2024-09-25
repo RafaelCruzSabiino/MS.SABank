@@ -26,11 +26,10 @@ namespace SABank.Application.Services
             try
             {
                 user = _mapper.Map<UserDto>(_userRepository.GetByLogin(idLogin));
-                _logger.LogDebug("teste");
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex); // VER LOG
+                _logger.LogError(ex.Message);
             }
 
             return user;
