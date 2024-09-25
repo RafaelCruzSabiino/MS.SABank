@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hr+loSICJpW1kyBjfea4hncK4h3WEpFUNJ/9AXpXnrknQj7MFCzUbNHc84U3DhLDbO/XPIGkMVaKPRAPpIhvrw==",
+  "dgSpecHash": "sS8ReXiMZkoxlXsgCct0Fehd4jmcwYDQNV/s452D3qYdb34WgyWLaugLonACUc+GzxazA58qRocv8xNRWCw4NQ==",
   "success": true,
   "projectFilePath": "C:\\Desenvolvimento\\MS.SABank\\src\\adapters\\inbound\\SABank.Api\\SABank.Api.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\rcsabino\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\rcsabino\\.nuget\\packages\\nlog\\5.3.4\\nlog.5.3.4.nupkg.sha512",
     "C:\\Users\\rcsabino\\.nuget\\packages\\nlog.extensions.logging\\5.3.13\\nlog.extensions.logging.5.3.13.nupkg.sha512",
+    "C:\\Users\\rcsabino\\.nuget\\packages\\nlog.web.aspnetcore\\5.3.14\\nlog.web.aspnetcore.5.3.14.nupkg.sha512",
     "C:\\Users\\rcsabino\\.nuget\\packages\\npgsql\\7.0.7\\npgsql.7.0.7.nupkg.sha512",
     "C:\\Users\\rcsabino\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.18\\npgsql.entityframeworkcore.postgresql.7.0.18.nupkg.sha512",
     "C:\\Users\\rcsabino\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",

@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\adapters\outbound\SABank.Infra\SABank.Infra.csproj" />
     <ProjectReference Include="..\..\ports\SABank.Interfaces\SABank.Interfaces.csproj" />
   </ItemGroup>
 
