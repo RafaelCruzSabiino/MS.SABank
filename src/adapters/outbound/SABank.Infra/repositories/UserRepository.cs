@@ -2,7 +2,7 @@
 using SABank.Infra.Context;
 using SABank.Interfaces.Outbound;
 
-namespace SABank.Infra.repositories
+namespace SABank.Infra.Repositories
 {
     public class UserRepository : IUserRepository
     {

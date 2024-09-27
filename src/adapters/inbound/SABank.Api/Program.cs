@@ -1,14 +1,14 @@
-using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using SABank.Application.Services;
 using NLog;
 using NLog.Web;
 using SABank.Infra.Context;
-using SABank.Infra.repositories;
+using SABank.Infra.Repositories;
 using SABank.Interfaces.Inbound;
 using SABank.Interfaces.Outbound;
 using SABank.Api.Middlewares;
 using SABank.Infra.Loggers;
+using SABank.Api.HealthCheck;
 
 var logger = LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 
@@ -29,10 +29,15 @@ try
         c.SwaggerDoc("v1", new OpenApiInfo { Title = "SABank", Description = "Controle Finanças.", Version = "v1" });
     });
 
+    builder.Services
+        .AddHealthChecks()
+        .AddCheck<UserHealthCheck>(nameof(UserHealthCheck))
+        .AddNpgSql(builder.Configuration.GetConnectionString("pgsql"));
+
     builder.Services.AddScoped<IUserService, UserService>();
     builder.Services.AddScoped<IUserRepository, UserRepository>();
     builder.Services.AddScoped<ILoggerAdapter<GlobalExceptionMiddleware>, LoggerAdapter<GlobalExceptionMiddleware>>();
-    builder.Services.AddDbContext<UserContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("pgsql")));
+    builder.Services.AddDbContext<UserContext>();
     builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
     var app = builder.Build();
@@ -45,6 +50,8 @@ try
         app.UseSwagger();
         app.UseSwaggerUI();
     }
+
+    app.MapHealthChecks("/health");
 
     app.UseHttpsRedirection();
 
