@@ -7,6 +7,8 @@ using SABank.Infra.Context;
 using SABank.Infra.repositories;
 using SABank.Interfaces.Inbound;
 using SABank.Interfaces.Outbound;
+using SABank.Api.Middlewares;
+using SABank.Infra.Loggers;
 
 var logger = LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 
@@ -29,6 +31,7 @@ try
 
     builder.Services.AddScoped<IUserService, UserService>();
     builder.Services.AddScoped<IUserRepository, UserRepository>();
+    builder.Services.AddScoped<ILoggerAdapter<GlobalExceptionMiddleware>, LoggerAdapter<GlobalExceptionMiddleware>>();
     builder.Services.AddDbContext<UserContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("pgsql")));
     builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
@@ -46,6 +49,8 @@ try
     app.UseHttpsRedirection();
 
     app.UseAuthorization();
+
+    app.UseMiddleware<GlobalExceptionMiddleware>();
 
     app.MapControllers();
 

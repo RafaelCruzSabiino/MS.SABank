@@ -7,9 +7,6 @@ namespace SABank.Domain.Mappers
     public class UserMapper : Profile
     {
         public UserMapper()
-        {
-            CreateMap<UserEntity, UserDto>()
-                .ReverseMap();
-        }
+            => CreateMap<UserEntity, UserDto>().ReverseMap();
     }
 }
