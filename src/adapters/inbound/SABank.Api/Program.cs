@@ -31,8 +31,8 @@ try
 
     builder.Services
         .AddHealthChecks()
-        .AddCheck<UserHealthCheck>(nameof(UserHealthCheck))
-        .AddNpgSql(builder.Configuration.GetConnectionString("pgsql"));
+        .AddCheck<UserHealthCheck>(nameof(UserHealthCheck));
+        //.AddNpgSql(builder.Configuration.GetConnectionString("pgsql"));
 
     builder.Services.AddScoped<IUserService, UserService>();
     builder.Services.AddScoped<IUserRepository, UserRepository>();
