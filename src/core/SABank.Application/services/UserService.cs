@@ -1,9 +1,10 @@
 ﻿using AutoMapper;
-using SABank.Domain.dtos;
-using SABank.Interfaces.inbound;
-using SABank.Interfaces.outbound;
+using Microsoft.Extensions.Logging;
+using SABank.Domain.Dtos;
+using SABank.Interfaces.Inbound;
+using SABank.Interfaces.Outbound;
 
-namespace SABank.Application.services
+namespace SABank.Application.Services
 {
     public class UserService : IUserService
     {
@@ -26,7 +27,7 @@ namespace SABank.Application.services
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex); // VER LOG
+                throw new Exception(ex.Message);
             }
 
             return user;

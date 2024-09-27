@@ -1,6 +1,6 @@
-﻿using SABank.Domain.entities;
+﻿using SABank.Domain.Entities;
 using SABank.Infra.Context;
-using SABank.Interfaces.outbound;
+using SABank.Interfaces.Outbound;
 
 namespace SABank.Infra.repositories
 {
@@ -8,10 +8,8 @@ namespace SABank.Infra.repositories
     {
         private readonly UserContext _userContext;
 
-        public UserRepository(UserContext userContext)
-        {
-            _userContext = userContext;
-        }
+        public UserRepository(UserContext userContext) 
+            => _userContext = userContext;
 
         public UserEntity? GetByLogin(int idLogin)
             => _userContext.tb_sab_0002.FirstOrDefault(e => e.IdLogin == idLogin);

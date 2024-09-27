@@ -1,15 +1,12 @@
 ﻿using AutoMapper;
-using SABank.Domain.dtos;
-using SABank.Domain.entities;
+using SABank.Domain.Dtos;
+using SABank.Domain.Entities;
 
-namespace SABank.Domain.mappers
+namespace SABank.Domain.Mappers
 {
     public class UserMapper : Profile
     {
         public UserMapper()
-        {
-            CreateMap<UserEntity, UserDto>()
-                .ReverseMap();
-        }
+            => CreateMap<UserEntity, UserDto>().ReverseMap();
     }
 }
