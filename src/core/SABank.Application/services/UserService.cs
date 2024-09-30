@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Microsoft.Extensions.Logging;
 using SABank.Domain.Dtos;
 using SABank.Interfaces.Inbound;
 using SABank.Interfaces.Outbound;
