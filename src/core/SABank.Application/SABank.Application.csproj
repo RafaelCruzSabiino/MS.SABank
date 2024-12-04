@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\adapters\outbound\SABank.Infra\SABank.Infra.csproj" />
+    <ProjectReference Include="..\..\ports\SABank.Interfaces\SABank.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
